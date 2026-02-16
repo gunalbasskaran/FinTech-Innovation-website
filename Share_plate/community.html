@@ -1,0 +1,339 @@
+<!-- ============================================
+  SharePlate — Community Board Page
+  Searchable listing grid of available food,
+  filter bar, sample listings, CTA
+============================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse surplus food available near you on SharePlate. Fresh produce, baked goods, cooked meals, and more — all shared by your neighbors for free.">
+  <title>Community Board — SharePlate</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ======== NAVIGATION ======== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="SharePlate Home">
+        <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <circle cx="16" cy="16" r="14" fill="#2D6A4F"/>
+          <path d="M16 8C16 8 10 14 10 18C10 21.3 12.7 24 16 24C19.3 24 22 21.3 22 18C22 14 16 8 16 8Z" fill="#D8F3DC"/>
+          <path d="M16 12V20M13 17H19" stroke="#2D6A4F" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        SharePlate
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="community.html">Community</a>
+        <a href="about.html">About</a>
+        <a href="about.html#contact" class="btn btn-primary btn-sm nav-cta">Get Started</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======== MAIN CONTENT ======== -->
+  <main id="main">
+
+    <!-- ---- Page Hero ---- -->
+    <section class="page-hero centered" aria-label="Community Board introduction">
+      <div class="container">
+        <h1>Community Food Board</h1>
+        <p>Discover surplus food shared by neighbors near you. Claim what you need, share what you can — no food left behind.</p>
+      </div>
+    </section>
+
+    <!-- ---- Filter & Listings ---- -->
+    <section class="section" aria-labelledby="listings-heading">
+      <div class="container">
+
+        <!-- Filter Bar -->
+        <div class="filter-bar fade-in">
+          <form class="filter-form" id="filterForm" aria-label="Filter food listings">
+            <div class="filter-group">
+              <label for="search">Search</label>
+              <input type="text" id="search" placeholder="Bread, vegetables, pasta...">
+            </div>
+            <div class="filter-group">
+              <label for="category">Category</label>
+              <select id="category">
+                <option value="all">All Categories</option>
+                <option value="produce">Produce</option>
+                <option value="baked">Baked Goods</option>
+                <option value="cooked">Cooked Meals</option>
+                <option value="packaged">Packaged Items</option>
+                <option value="dairy">Dairy &amp; Eggs</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="distance">Distance</label>
+              <select id="distance">
+                <option value="1">Within 1 mile</option>
+                <option value="3" selected>Within 3 miles</option>
+                <option value="5">Within 5 miles</option>
+                <option value="10">Within 10 miles</option>
+              </select>
+            </div>
+            <div class="filter-btn">
+              <button type="submit" class="btn btn-primary btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                Search
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <h2 id="listings-heading" class="sr-only">Available Food Listings</h2>
+
+        <!-- Listings Grid -->
+        <div class="listings-grid stagger-children">
+
+          <!-- Listing 1 -->
+          <article class="listing-card">
+            <div class="listing-img">
+              <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
+                   alt="Fresh mixed salad with leafy greens and tomatoes" loading="lazy">
+              <span class="listing-badge">Produce</span>
+            </div>
+            <div class="listing-body">
+              <h3>Fresh Garden Tomatoes</h3>
+              <div class="listing-info">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                Posted 2 hours ago
+              </div>
+              <p class="listing-desc">About 3 lbs of ripe Roma and heirloom tomatoes from our backyard. Perfect for sauces or salads. Organic, no pesticides.</p>
+              <div class="listing-footer">
+                <span class="listing-distance">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  0.3 mi
+                </span>
+                <button class="btn btn-primary btn-sm">Claim</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Listing 2 -->
+          <article class="listing-card">
+            <div class="listing-img">
+              <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80"
+                   alt="Freshly baked golden sourdough bread" loading="lazy">
+              <span class="listing-badge">Baked Goods</span>
+            </div>
+            <div class="listing-body">
+              <h3>Homemade Sourdough Loaves</h3>
+              <div class="listing-info">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                Posted 1 hour ago
+              </div>
+              <p class="listing-desc">Two extra loaves baked this morning. Wheat flour, water, salt, and sourdough starter. Crusty outside, soft inside.</p>
+              <div class="listing-footer">
+                <span class="listing-distance">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  0.5 mi
+                </span>
+                <button class="btn btn-primary btn-sm">Claim</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Listing 3 -->
+          <article class="listing-card">
+            <div class="listing-img">
+              <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=600&q=80"
+                   alt="A bunch of fresh ripe red apples" loading="lazy">
+              <span class="listing-badge urgent">Pickup Today</span>
+            </div>
+            <div class="listing-body">
+              <h3>Organic Apple Bunch</h3>
+              <div class="listing-info">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                Posted 30 minutes ago
+              </div>
+              <p class="listing-desc">About a dozen Fuji apples — bought too many at the farmers market. Crisp and sweet, great for snacking or baking.</p>
+              <div class="listing-footer">
+                <span class="listing-distance">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  0.8 mi
+                </span>
+                <button class="btn btn-primary btn-sm">Claim</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Listing 4 -->
+          <article class="listing-card">
+            <div class="listing-img">
+              <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=600&q=80"
+                   alt="A bowl of fresh homemade pasta with herbs" loading="lazy">
+              <span class="listing-badge urgent">Pickup Today</span>
+            </div>
+            <div class="listing-body">
+              <h3>Leftover Pasta Carbonara</h3>
+              <div class="listing-info">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                Posted 45 minutes ago
+              </div>
+              <p class="listing-desc">Made way too much pasta for dinner. Two full servings, contains dairy and eggs. Prepared fresh tonight. Refrigerated.</p>
+              <div class="listing-footer">
+                <span class="listing-distance">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  0.2 mi
+                </span>
+                <button class="btn btn-primary btn-sm">Claim</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Listing 5 -->
+          <article class="listing-card">
+            <div class="listing-img">
+              <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80"
+                   alt="A beautifully decorated layered cake on a stand" loading="lazy">
+              <span class="listing-badge">Baked Goods</span>
+            </div>
+            <div class="listing-body">
+              <h3>Half a Chocolate Layer Cake</h3>
+              <div class="listing-info">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                Posted 3 hours ago
+              </div>
+              <p class="listing-desc">Leftover from a birthday party. Chocolate buttercream, three layers. Contains gluten, dairy, and eggs. Delicious!</p>
+              <div class="listing-footer">
+                <span class="listing-distance">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  1.2 mi
+                </span>
+                <button class="btn btn-primary btn-sm">Claim</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Listing 6 -->
+          <article class="listing-card">
+            <div class="listing-img">
+              <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&w=600&q=80"
+                   alt="A table spread with assorted cooked dishes and sides" loading="lazy">
+              <span class="listing-badge">Cooked Meal</span>
+            </div>
+            <div class="listing-body">
+              <h3>Assorted Dinner Sides</h3>
+              <div class="listing-info">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                Posted 1 hour ago
+              </div>
+              <p class="listing-desc">Roasted potatoes, steamed green beans, and rice pilaf. Cooked for a party that had fewer guests than expected. All vegan.</p>
+              <div class="listing-footer">
+                <span class="listing-distance">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  0.6 mi
+                </span>
+                <button class="btn btn-primary btn-sm">Claim</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="text-center fade-in" style="margin-top: var(--sp-3xl);">
+          <p style="margin-bottom: var(--sp-lg); font-size: var(--fs-md);">Have food to share? Be the generous neighbor your community needs.</p>
+          <a href="about.html#contact" class="btn btn-accent btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Share Food Now
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ---- CTA ---- -->
+    <section class="cta-section" aria-labelledby="cta-community-heading">
+      <div class="container">
+        <h2 id="cta-community-heading">Don't See What You Need?</h2>
+        <p>New listings are posted every hour. Join the community to get notifications when food becomes available in your neighborhood.</p>
+        <a href="about.html#contact" class="btn btn-accent btn-lg">Join SharePlate Free</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="SharePlate Home">
+            <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <circle cx="16" cy="16" r="14" fill="#2D6A4F"/>
+              <path d="M16 8C16 8 10 14 10 18C10 21.3 12.7 24 16 24C19.3 24 22 21.3 22 18C22 14 16 8 16 8Z" fill="#D8F3DC"/>
+              <path d="M16 12V20M13 17H19" stroke="#2D6A4F" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            SharePlate
+          </a>
+          <p>Feed your neighbor, not the landfill. Join thousands of community members reducing food waste one meal at a time.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Follow us on Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012 7.5v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+            </a>
+            <a href="#" aria-label="Follow us on Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Follow us on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="community.html">Browse Food</a>
+          <a href="about.html#contact">Share Food</a>
+          <a href="about.html">Our Impact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="about.html#contact">Contact</a>
+          <a href="how-it-works.html#faq">FAQ</a>
+          <a href="#">Careers</a>
+        </div>
+        <div class="footer-col">
+          <h4>Stay Updated</h4>
+          <p class="footer-newsletter-desc">Get weekly tips on reducing food waste in your community.</p>
+          <form class="footer-newsletter" aria-label="Newsletter signup">
+            <input type="email" placeholder="Your email" aria-label="Email address for newsletter" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-credits">
+        <p>Designed &amp; Developed by <strong>Gunal</strong></p>
+        <div class="credit-links">
+          <a href="https://github.com/gunalbasskaran" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/gunal-/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 SharePlate. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

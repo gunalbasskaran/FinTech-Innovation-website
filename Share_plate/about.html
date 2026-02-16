@@ -1,0 +1,348 @@
+<!-- ============================================
+  SharePlate — About & Impact Page
+  Mission, impact dashboard, our story,
+  partners, contact form
+============================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about SharePlate's mission to eliminate food waste through community sharing. See our impact, meet the team, and get in touch.">
+  <title>About &amp; Impact — SharePlate</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ======== NAVIGATION ======== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="SharePlate Home">
+        <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <circle cx="16" cy="16" r="14" fill="#2D6A4F"/>
+          <path d="M16 8C16 8 10 14 10 18C10 21.3 12.7 24 16 24C19.3 24 22 21.3 22 18C22 14 16 8 16 8Z" fill="#D8F3DC"/>
+          <path d="M16 12V20M13 17H19" stroke="#2D6A4F" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        SharePlate
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="community.html">Community</a>
+        <a href="about.html">About</a>
+        <a href="about.html#contact" class="btn btn-primary btn-sm nav-cta">Get Started</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======== MAIN CONTENT ======== -->
+  <main id="main">
+
+    <!-- ---- Page Hero ---- -->
+    <section class="page-hero centered" aria-label="About SharePlate">
+      <div class="container">
+        <h1>Our Mission &amp; Impact</h1>
+        <p>We believe no food should go to waste while a neighbor goes hungry. SharePlate is bridging that gap, one community at a time.</p>
+      </div>
+    </section>
+
+    <!-- ---- Impact Dashboard ---- -->
+    <section class="section" aria-labelledby="impact-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2 id="impact-heading">The Impact So Far</h2>
+          <p>Every number represents real food saved, real neighbors fed, and real environmental impact.</p>
+        </div>
+        <div class="impact-grid stagger-children">
+          <article class="impact-card">
+            <div class="impact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                <path d="M13.73 21a2 2 0 01-3.46 0"/>
+              </svg>
+            </div>
+            <h3 data-counter="58400" data-suffix="+">0</h3>
+            <p>Meals successfully shared between community members since we launched in 2024.</p>
+          </article>
+          <article class="impact-card">
+            <div class="impact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 data-counter="23600" data-suffix=" lbs">0</h3>
+            <p>Pounds of food diverted from landfills, preventing over 18 tons of methane emissions.</p>
+          </article>
+          <article class="impact-card">
+            <div class="impact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+                <path d="M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <h3 data-counter="12000" data-suffix="+">0</h3>
+            <p>Verified community members across 340 neighborhoods in 28 states and growing.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---- Our Story ---- -->
+    <section class="section" style="background: var(--color-cream);" aria-labelledby="story-heading">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-image fade-in-left">
+            <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=800&q=80"
+                 alt="Volunteers at a community food drive organizing donations" loading="lazy">
+          </div>
+          <div class="story-content fade-in-right">
+            <h2 id="story-heading">How SharePlate Started</h2>
+            <p>In the summer of 2024, our founder Maya Rivera noticed something troubling. After every neighborhood block party, bags of perfectly good food were tossed into the trash. Down the street, a family was struggling to put meals on the table.</p>
+            <p>Maya started a simple group chat for neighbors to post surplus food before throwing it away. Within a week, 40 households had joined. Within a month, the idea had spread to three more blocks. That grassroots experiment became SharePlate.</p>
+            <p>Today, we're a growing platform serving over 12,000 members — but our mission hasn't changed. We exist to make sure good food finds a good home, and neighbors find each other.</p>
+            <a href="how-it-works.html" class="btn btn-primary">See How It Works</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---- Values ---- -->
+    <section class="section" aria-labelledby="values-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2 id="values-heading">What We Stand For</h2>
+          <p>The principles behind every feature, partnership, and design decision we make.</p>
+        </div>
+        <div class="safety-grid stagger-children">
+          <div class="safety-card">
+            <div class="safety-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            </div>
+            <div>
+              <h4>Community First</h4>
+              <p>Everything starts with neighbors helping neighbors. We build tools that strengthen local bonds, not replace them with algorithms.</p>
+            </div>
+          </div>
+          <div class="safety-card">
+            <div class="safety-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <div>
+              <h4>Radical Transparency</h4>
+              <p>Our impact numbers, food safety guidelines, and business model are fully public. We believe trust is built by letting everyone see the work.</p>
+            </div>
+          </div>
+          <div class="safety-card">
+            <div class="safety-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v18M5.636 5.636l12.728 12.728M3 12h18M5.636 18.364L18.364 5.636"/></svg>
+            </div>
+            <div>
+              <h4>Zero Judgment</h4>
+              <p>Sharing food isn't charity — it's community. Whether you're giving or receiving, you're playing an equal role in reducing waste.</p>
+            </div>
+          </div>
+          <div class="safety-card">
+            <div class="safety-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+            </div>
+            <div>
+              <h4>Sustainable by Design</h4>
+              <p>Every design choice — from local-only listings to low-data architecture — is made with environmental sustainability at the center.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---- Partners ---- -->
+    <section class="section" style="background: var(--color-gray-light);" aria-labelledby="partners-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2 id="partners-heading">Our Partners &amp; Supporters</h2>
+          <p>Organizations that share our vision of reducing food waste nationwide.</p>
+        </div>
+        <div class="partners-grid fade-in">
+          <span class="partner-logo">FeedForward</span>
+          <span class="partner-logo">GreenTable Co.</span>
+          <span class="partner-logo">EcoHarvest</span>
+          <span class="partner-logo">LocalRoots</span>
+          <span class="partner-logo">MealBridge</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---- Contact Form ---- -->
+    <section class="section form-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info fade-in-left">
+            <h2 id="contact-heading">Get in Touch</h2>
+            <p>Have a question, want to partner with us, or want to bring SharePlate to your neighborhood? We'd love to hear from you.</p>
+
+            <div class="contact-detail">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>hello@shareplate.community</span>
+            </div>
+            <div class="contact-detail">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              <span>(555) 234-5678</span>
+            </div>
+            <div class="contact-detail">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Portland, OR — Serving 340+ neighborhoods nationwide</span>
+            </div>
+
+            <!-- Mini Gallery -->
+            <div style="margin-top: var(--sp-2xl);">
+              <h4 style="margin-bottom: var(--sp-md);">From Our Community</h4>
+              <div class="gallery-grid" style="grid-template-columns: repeat(3, 1fr); gap: var(--sp-sm);">
+                <div class="gallery-item" style="aspect-ratio: 1;">
+                  <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=200&q=80"
+                       alt="Friends enjoying a shared community dinner together" loading="lazy">
+                </div>
+                <div class="gallery-item" style="aspect-ratio: 1;">
+                  <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?auto=format&fit=crop&w=200&q=80"
+                       alt="Fresh colorful fruits arranged in a bowl" loading="lazy">
+                </div>
+                <div class="gallery-item" style="aspect-ratio: 1;">
+                  <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=200&q=80"
+                       alt="A healthy homemade meal on a wooden table" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-card fade-in-right">
+            <form id="contactForm" novalidate>
+              <div class="form-message" role="alert" aria-live="polite"></div>
+
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Jane Doe" autocomplete="name" required>
+                <span class="error-text" aria-live="polite">Please enter your full name</span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="jane@example.com" autocomplete="email" required>
+                <span class="error-text" aria-live="polite">Please enter a valid email address</span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject">
+                  <option value="general">General Inquiry</option>
+                  <option value="partner">Partnership Opportunity</option>
+                  <option value="volunteer">Volunteer</option>
+                  <option value="press">Press &amp; Media</option>
+                  <option value="support">Technical Support</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" placeholder="Tell us how we can help or how you'd like to get involved..." required></textarea>
+                <span class="error-text" aria-live="polite">Your message must be at least 10 characters</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---- CTA ---- -->
+    <section class="cta-section" aria-labelledby="cta-about-heading">
+      <div class="container">
+        <h2 id="cta-about-heading">Join the Movement Today</h2>
+        <p>Every meal shared is a step toward a world with zero food waste. Start making your impact — it only takes a minute to sign up.</p>
+        <div style="display: flex; gap: var(--sp-md); justify-content: center; flex-wrap: wrap; position: relative; z-index: 1;">
+          <a href="community.html" class="btn btn-accent btn-lg">Browse Available Food</a>
+          <a href="how-it-works.html" class="btn btn-secondary btn-lg" style="border-color: rgba(255,255,255,0.5); color: var(--color-white);">Learn How It Works</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="SharePlate Home">
+            <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <circle cx="16" cy="16" r="14" fill="#2D6A4F"/>
+              <path d="M16 8C16 8 10 14 10 18C10 21.3 12.7 24 16 24C19.3 24 22 21.3 22 18C22 14 16 8 16 8Z" fill="#D8F3DC"/>
+              <path d="M16 12V20M13 17H19" stroke="#2D6A4F" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            SharePlate
+          </a>
+          <p>Feed your neighbor, not the landfill. Join thousands of community members reducing food waste one meal at a time.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Follow us on Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012 7.5v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+            </a>
+            <a href="#" aria-label="Follow us on Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Follow us on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="community.html">Browse Food</a>
+          <a href="about.html#contact">Share Food</a>
+          <a href="about.html">Our Impact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="about.html#contact">Contact</a>
+          <a href="how-it-works.html#faq">FAQ</a>
+          <a href="#">Careers</a>
+        </div>
+        <div class="footer-col">
+          <h4>Stay Updated</h4>
+          <p class="footer-newsletter-desc">Get weekly tips on reducing food waste in your community.</p>
+          <form class="footer-newsletter" aria-label="Newsletter signup">
+            <input type="email" placeholder="Your email" aria-label="Email address for newsletter" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-credits">
+        <p>Designed &amp; Developed by <strong>Gunal</strong></p>
+        <div class="credit-links">
+          <a href="https://github.com/gunalbasskaran" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/gunal-/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 SharePlate. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

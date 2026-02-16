@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play — Escape Run</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">🏃</div>
+        <span>Escape Run</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="game.html" class="nav-cta active">Play Now</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== GAME ===== -->
+  <section class="game-section">
+    <div class="game-wrapper" id="gameWrapper">
+      <div class="game-hud">
+        <div class="hud-item">
+          <span class="hud-icon">🏃</span>
+          <span>Score:</span>
+          <span class="hud-value" id="hudScore">0</span>
+        </div>
+        <div class="hud-item">
+          <span class="hud-icon">🪙</span>
+          <span>Coins:</span>
+          <span class="hud-value" id="hudCoins">0</span>
+        </div>
+        <div class="hud-item">
+          <span class="hud-icon">❤️</span>
+          <span>Lives:</span>
+          <span class="hud-value" id="hudLives">3</span>
+        </div>
+        <div class="hud-item">
+          <span class="hud-icon">⚡</span>
+          <span>Speed:</span>
+          <span class="hud-value" id="hudSpeed">1.0x</span>
+        </div>
+      </div>
+
+      <canvas id="gameCanvas" width="900" height="400"></canvas>
+
+      <!-- Start Overlay -->
+      <div class="game-overlay" id="startOverlay">
+        <div class="overlay-content">
+          <h2><span class="highlight">Escape</span> Run</h2>
+          <p>Jump over obstacles, slide under barriers, collect coins.<br>How far can you run?</p>
+          <button class="btn btn-primary" id="startBtn" onclick="startGame()">
+            ▶ Start Running
+          </button>
+        </div>
+      </div>
+
+      <!-- Game Over Overlay -->
+      <div class="game-overlay hidden" id="gameOverOverlay">
+        <div class="overlay-content">
+          <h2>Game <span class="highlight">Over</span></h2>
+          <div class="final-score" id="finalScore">0</div>
+          <div class="final-score-label">Final Score</div>
+          <p id="gameOverMsg">Great run! Try again to beat your score.</p>
+          <button class="btn btn-primary" onclick="restartGame()">
+            ↻ Play Again
+          </button>
+        </div>
+      </div>
+
+      <div class="game-controls-info">
+        <div class="control-hint"><kbd>↑</kbd> or <kbd>Space</kbd> Jump</div>
+        <div class="control-hint"><kbd>↓</kbd> Slide</div>
+        <div class="control-hint"><kbd>P</kbd> Pause</div>
+      </div>
+    </div>
+
+    <!-- Mobile controls -->
+    <div class="mobile-controls" id="mobileControls">
+      <button class="mobile-btn" id="btnSlide" aria-label="Slide">⬇</button>
+      <button class="mobile-btn" id="btnJump" aria-label="Jump" style="width:80px;height:80px;font-size:1.8rem;">⬆</button>
+      <button class="mobile-btn" id="btnPause" aria-label="Pause">⏸</button>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="footer-logo">
+            <div class="logo-icon">🏃</div>
+            <span>Escape Run</span>
+          </div>
+          <p>An endless runner adventure game where every second counts. Dash through ancient ruins and survive the unknown.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="YouTube">▶</a>
+            <a href="#" aria-label="Discord">💬</a>
+            <a href="#" aria-label="Instagram">📷</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <a href="index.html">Home</a>
+          <a href="game.html">Play Game</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Game</h4>
+          <a href="game.html">Start Playing</a>
+          <a href="about.html#features">Features</a>
+          <a href="#">Leaderboard</a>
+          <a href="#">Updates</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">Pixel Dash Studios</a>
+          <a href="#">Careers</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Pixel Dash Studios. All rights reserved.</p>
+        <p>Made with ♥ for gamers everywhere</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>

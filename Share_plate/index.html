@@ -1,0 +1,358 @@
+<!-- ============================================
+  SharePlate — Home Page (index.html)
+  Landing page: hero, stats, how-it-works,
+  featured listings, testimonials, CTA
+============================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SharePlate connects neighbors to share surplus food, reduce waste, and strengthen communities. Join thousands already making a difference.">
+  <meta name="keywords" content="food sharing, reduce food waste, community, surplus food, SharePlate">
+  <title>SharePlate — Feed Your Neighbor, Not the Landfill</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ======== NAVIGATION ======== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="SharePlate Home">
+        <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <circle cx="16" cy="16" r="14" fill="#2D6A4F"/>
+          <path d="M16 8C16 8 10 14 10 18C10 21.3 12.7 24 16 24C19.3 24 22 21.3 22 18C22 14 16 8 16 8Z" fill="#D8F3DC"/>
+          <path d="M16 12V20M13 17H19" stroke="#2D6A4F" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        SharePlate
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="community.html">Community</a>
+        <a href="about.html">About</a>
+        <a href="about.html#contact" class="btn btn-primary btn-sm nav-cta">Get Started</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======== MAIN CONTENT ======== -->
+  <main id="main">
+
+    <!-- ---- Hero ---- -->
+    <section class="hero" aria-label="Welcome to SharePlate">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80"
+             alt="A vibrant spread of fresh food on a table" loading="eager">
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+            Trusted by 12,000+ community members
+          </div>
+          <h1>Feed Your Neighbor,<br><span>Not the Landfill</span></h1>
+          <p>SharePlate connects you with neighbors to share surplus food before it goes to waste. Together, we're building stronger communities — one meal at a time.</p>
+          <div class="hero-buttons">
+            <a href="about.html#contact" class="btn btn-primary btn-lg">Join the Movement</a>
+            <a href="how-it-works.html" class="btn btn-secondary btn-lg">See How It Works</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---- Stats Bar ---- -->
+    <section class="stats-bar" aria-label="Impact statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number" data-counter="58400" data-suffix="+">0</div>
+            <div class="stat-label">Meals Shared</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-counter="23600" data-suffix=" lbs">0</div>
+            <div class="stat-label">Food Saved From Waste</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-counter="340" data-suffix="+">0</div>
+            <div class="stat-label">Active Neighborhoods</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-counter="12000" data-suffix="+">0</div>
+            <div class="stat-label">Community Members</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---- How It Works (Mini) ---- -->
+    <section class="section" aria-labelledby="how-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2 id="how-heading">Sharing Food Is Simpler Than You Think</h2>
+          <p>Three easy steps to turn your surplus into someone's next meal.</p>
+        </div>
+        <div class="steps-grid stagger-children">
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">1</div>
+            <h3>Snap &amp; Post</h3>
+            <p>Take a quick photo of the food you want to share, add a short description, and set your pickup window. It takes less than a minute.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">2</div>
+            <h3>Neighbor Claims</h3>
+            <p>A nearby community member sees your listing, claims the item, and arranges a pickup time that works for both of you.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number" aria-hidden="true">3</div>
+            <h3>Share &amp; Smile</h3>
+            <p>Hand off the food at your doorstep. You've just prevented waste, fed a neighbor, and strengthened your community.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---- Featured Listings ---- -->
+    <section class="section" style="background: var(--color-gray-light);" aria-labelledby="featured-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2 id="featured-heading">Available Near You</h2>
+          <p>Fresh food shared by your neighbors — ready for pickup right now.</p>
+        </div>
+        <div class="cards-grid stagger-children">
+          <article class="card">
+            <img class="card-img" src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
+                 alt="Assorted fresh vegetables including peppers and leafy greens" loading="lazy">
+            <div class="card-body">
+              <span class="card-tag">Produce</span>
+              <h3>Fresh Garden Vegetables</h3>
+              <p>Tomatoes, bell peppers, and zucchini from our backyard garden. Too much for our family — all organic, picked today.</p>
+              <div class="card-meta">
+                <span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  0.3 mi away
+                </span>
+                <span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                  Posted 2 hours ago
+                </span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80"
+                 alt="Freshly baked artisan sourdough bread loaves" loading="lazy">
+            <div class="card-body">
+              <span class="card-tag">Baked Goods</span>
+              <h3>Homemade Sourdough Bread</h3>
+              <p>Baked two extra loaves this morning. Crusty exterior, soft inside. Perfect for sandwiches or toast.</p>
+              <div class="card-meta">
+                <span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  0.5 mi away
+                </span>
+                <span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                  Posted 1 hour ago
+                </span>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=600&q=80"
+                 alt="Colorful farmers market produce display" loading="lazy">
+            <div class="card-body">
+              <span class="card-tag">Mixed</span>
+              <h3>Farmers Market Haul</h3>
+              <p>Bought more than we can eat this week — apples, kale, carrots, and fresh herbs. All locally sourced.</p>
+              <div class="card-meta">
+                <span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  0.8 mi away
+                </span>
+                <span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                  Posted 3 hours ago
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="text-center" style="margin-top: var(--sp-2xl);">
+          <a href="community.html" class="btn btn-secondary">Browse All Listings</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---- Testimonials ---- -->
+    <section class="section" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2 id="testimonials-heading">What Our Community Says</h2>
+          <p>Real stories from real neighbors making a real difference.</p>
+        </div>
+        <div class="testimonials-grid stagger-children">
+          <article class="testimonial-card">
+            <p class="testimonial-text">I used to throw out vegetables every week. Now I post them on SharePlate and they're gone within an hour. It feels wonderful knowing someone is enjoying what I grew.</p>
+            <div class="testimonial-author">
+              <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80"
+                   alt="Portrait of Marcus Chen" loading="lazy">
+              <div>
+                <div class="testimonial-name">Marcus Chen</div>
+                <div class="testimonial-role">Home Gardener, Portland</div>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-text">As a single mom on a tight budget, SharePlate has been a lifeline. The community is kind, respectful, and genuinely generous. I've also started sharing when I can.</p>
+            <div class="testimonial-author">
+              <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
+                   alt="Portrait of Aisha Johnson" loading="lazy">
+              <div>
+                <div class="testimonial-name">Aisha Johnson</div>
+                <div class="testimonial-role">Community Member, Austin</div>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <p class="testimonial-text">We list our unsold pastries every evening and they're claimed within minutes. Zero waste, happy neighbors, and great PR for our bakery. Win-win-win.</p>
+            <div class="testimonial-author">
+              <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&q=80"
+                   alt="Portrait of David Morales" loading="lazy">
+              <div>
+                <div class="testimonial-name">David Morales</div>
+                <div class="testimonial-role">Owner, Sunrise Bakery</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---- Gallery ---- -->
+    <section class="section" style="background: var(--color-cream);" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2 id="gallery-heading">Community In Action</h2>
+          <p>Snapshots from neighborhoods across the country sharing food and building connections.</p>
+        </div>
+        <div class="gallery-grid fade-in">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=400&q=80"
+                 alt="Neighbors gathering around a shared community meal outdoors" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?auto=format&fit=crop&w=400&q=80"
+                 alt="Colorful fresh fruits including strawberries and oranges" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=400&q=80"
+                 alt="A wholesome home-cooked meal ready to be shared" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&fit=crop&w=400&q=80"
+                 alt="Fresh Asian cuisine prepared with care and detail" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=400&q=80"
+                 alt="Lush green farm field with rows of healthy crops" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?auto=format&fit=crop&w=400&q=80"
+                 alt="A beautifully arranged food table with diverse dishes" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---- CTA Section ---- -->
+    <section class="cta-section" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 id="cta-heading">Ready to Make a Difference?</h2>
+        <p>Join over 12,000 community members who are already reducing food waste in their neighborhoods. It's free, it's easy, and it matters.</p>
+        <a href="about.html#contact" class="btn btn-accent btn-lg">Get Started — It's Free</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="SharePlate Home">
+            <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <circle cx="16" cy="16" r="14" fill="#2D6A4F"/>
+              <path d="M16 8C16 8 10 14 10 18C10 21.3 12.7 24 16 24C19.3 24 22 21.3 22 18C22 14 16 8 16 8Z" fill="#D8F3DC"/>
+              <path d="M16 12V20M13 17H19" stroke="#2D6A4F" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            SharePlate
+          </a>
+          <p>Feed your neighbor, not the landfill. Join thousands of community members reducing food waste one meal at a time.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Follow us on Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012 7.5v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+            </a>
+            <a href="#" aria-label="Follow us on Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Follow us on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="community.html">Browse Food</a>
+          <a href="about.html#contact">Share Food</a>
+          <a href="about.html">Our Impact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="about.html#contact">Contact</a>
+          <a href="how-it-works.html#faq">FAQ</a>
+          <a href="#">Careers</a>
+        </div>
+        <div class="footer-col">
+          <h4>Stay Updated</h4>
+          <p class="footer-newsletter-desc">Get weekly tips on reducing food waste in your community.</p>
+          <form class="footer-newsletter" aria-label="Newsletter signup">
+            <input type="email" placeholder="Your email" aria-label="Email address for newsletter" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-credits">
+        <p>Designed &amp; Developed by <strong>Gunal</strong></p>
+        <div class="credit-links">
+          <a href="https://github.com/gunalbasskaran" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/gunal-/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 SharePlate. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
