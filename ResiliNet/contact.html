@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — ResiliNet</title>
+  <meta name="description" content="Request a demo, sign up for citizen alerts, or contact the ResiliNet team for climate resilience and disaster preparedness solutions.">
+  <meta name="theme-color" content="#0B1D3A">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ======= HEADER ======= -->
+  <header class="site-header" role="banner">
+    <nav class="nav-container" aria-label="Primary navigation">
+      <a href="index.html" class="nav-logo" aria-label="ResiliNet Home">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="20" cy="20" r="20" fill="#0B1D3A"/>
+          <circle cx="20" cy="20" r="6" fill="#00D4AA"/>
+          <circle cx="20" cy="8" r="2.5" fill="#00D4AA" opacity=".6"/>
+          <circle cx="20" cy="32" r="2.5" fill="#00D4AA" opacity=".6"/>
+          <circle cx="8" cy="20" r="2.5" fill="#00D4AA" opacity=".6"/>
+          <circle cx="32" cy="20" r="2.5" fill="#00D4AA" opacity=".6"/>
+        </svg>
+        ResiliNet
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="risk-map.html">Risk Map</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a href="contact.html" class="btn btn-primary nav-cta mobile-hidden">Get a Demo</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ======= HERO ======= -->
+    <section class="hero hero-mini" aria-labelledby="contact-hero-heading">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80" alt="" loading="eager" width="1920" height="1080">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-badge"><span class="dot"></span> We respond within 24 hours</div>
+        <h1 id="contact-hero-heading">Let's Build <span class="highlight">Resilience Together</span></h1>
+        <p>Whether you're a government agency, NGO, or community leader — we'd love to show you what ResiliNet can do.</p>
+      </div>
+    </section>
+
+    <!-- ======= CONTACT FORM + SIDEBAR ======= -->
+    <section class="section" aria-labelledby="form-heading">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Left: Form -->
+          <div>
+            <h2 id="form-heading" class="fade-up" style="margin-bottom:var(--space-2)">Request a Demo</h2>
+            <p class="fade-up" style="color:var(--color-gray-500);margin-bottom:var(--space-8)">Fill out the form and our team will schedule a personalized walkthrough of the platform.</p>
+
+            <form id="contactForm" novalidate>
+              <div class="form-success" role="alert">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+                Thank you! Your demo request has been submitted. We'll contact you within 24 hours.
+              </div>
+
+              <div class="grid-2" style="gap:var(--space-5)">
+                <div class="form-group fade-up">
+                  <label class="form-label" for="name">Full Name *</label>
+                  <input type="text" id="name" class="form-input" placeholder="Jane Doe" required>
+                  <div class="form-error" role="alert"></div>
+                </div>
+                <div class="form-group fade-up stagger-1">
+                  <label class="form-label" for="org">Organization *</label>
+                  <input type="text" id="org" class="form-input" placeholder="City of Miami" required>
+                  <div class="form-error" role="alert"></div>
+                </div>
+              </div>
+
+              <div class="grid-2" style="gap:var(--space-5)">
+                <div class="form-group fade-up">
+                  <label class="form-label" for="email">Work Email *</label>
+                  <input type="email" id="email" class="form-input" placeholder="jane@cityofmiami.gov" required>
+                  <div class="form-error" role="alert"></div>
+                </div>
+                <div class="form-group fade-up stagger-1">
+                  <label class="form-label" for="role">Your Role *</label>
+                  <select id="role" class="form-select" required>
+                    <option value="" disabled selected>Select your role</option>
+                    <option value="emergency-manager">Emergency Manager</option>
+                    <option value="government-official">Government Official</option>
+                    <option value="ngo-leader">NGO / Humanitarian Leader</option>
+                    <option value="urban-planner">Urban Planner</option>
+                    <option value="researcher">Researcher / Scientist</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <div class="form-error" role="alert"></div>
+                </div>
+              </div>
+
+              <div class="form-group fade-up">
+                <label class="form-label" for="region">Region / Country *</label>
+                <input type="text" id="region" class="form-input" placeholder="Southeast United States" required>
+                <div class="form-error" role="alert"></div>
+              </div>
+
+              <div class="form-group fade-up">
+                <label class="form-label" for="message">Message (optional)</label>
+                <textarea id="message" class="form-textarea" placeholder="Tell us about your community's needs and challenges..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-large fade-up">Submit Demo Request</button>
+            </form>
+          </div>
+
+          <!-- Right: Sidebar -->
+          <div>
+            <!-- Citizen Sign-up -->
+            <div class="card fade-up" style="margin-bottom:var(--space-6)">
+              <div class="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"/></svg>
+              </div>
+              <h3>Citizen Alert Sign-Up</h3>
+              <p>Get free disaster alerts for your area. Just enter your email and zip code.</p>
+              <form style="margin-top:var(--space-4)">
+                <div class="form-group">
+                  <input type="email" class="form-input" placeholder="your@email.com" required aria-label="Email for alerts">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-input" placeholder="Zip / Postal Code" required aria-label="Zip code">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%">Sign Up for Alerts</button>
+              </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info-card fade-up stagger-1">
+              <div class="icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>hello@resilinet.org</p>
+              </div>
+            </div>
+            <div class="contact-info-card fade-up stagger-2" style="margin-top:var(--space-3)">
+              <div class="icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
+              </div>
+              <div>
+                <h4>Phone</h4>
+                <p>+1 (800) 555-RESILI</p>
+              </div>
+            </div>
+            <div class="contact-info-card fade-up stagger-3" style="margin-top:var(--space-3)">
+              <div class="icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+              </div>
+              <div>
+                <h4>Headquarters</h4>
+                <p>123 Resilience Way, Miami, FL 33101</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= FAQ ======= -->
+    <section class="section bg-alt" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-label">Common Questions</span>
+          <h2 id="faq-heading">Frequently Asked Questions</h2>
+          <p>Quick answers to the most common questions about ResiliNet's platform and services.</p>
+        </div>
+        <div style="max-width:800px;margin:0 auto">
+          <div class="faq-item fade-up">
+            <button class="faq-question" aria-expanded="false">
+              How quickly can ResiliNet be deployed?
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">Most communities are fully operational within 5-10 business days. Our onboarding team handles data integration, user training, and initial risk assessments so you can focus on protecting your community.</div>
+            </div>
+          </div>
+          <div class="faq-item fade-up stagger-1">
+            <button class="faq-question" aria-expanded="false">
+              What types of disasters does the platform cover?
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">ResiliNet covers hurricanes, floods, wildfires, earthquakes, heatwaves, tsunamis, and severe storms. Our AI models continuously expand to cover emerging climate threats as new training data becomes available.</div>
+            </div>
+          </div>
+          <div class="faq-item fade-up stagger-2">
+            <button class="faq-question" aria-expanded="false">
+              Is there a free tier for small communities?
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">Yes. Communities under 10,000 residents qualify for our Community Shield program — free access to basic alerts and risk maps. Funded by our partnerships with international development organizations.</div>
+            </div>
+          </div>
+          <div class="faq-item fade-up stagger-3">
+            <button class="faq-question" aria-expanded="false">
+              Can ResiliNet integrate with our existing systems?
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">Absolutely. Our REST API and webhook integrations connect with CAD systems, FEMA IPAWS, CommonAlertingProtocol (CAP), and most major GIS platforms. Custom integrations are available for enterprise clients.</div>
+            </div>
+          </div>
+          <div class="faq-item fade-up">
+            <button class="faq-question" aria-expanded="false">
+              How accurate are the AI predictions?
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">Our multi-model ensemble achieves 94% accuracy for events within a 72-hour window. Prediction quality improves over time as models learn from local event data and ground-truth reports from your community.</div>
+            </div>
+          </div>
+          <div class="faq-item fade-up stagger-1">
+            <button class="faq-question" aria-expanded="false">
+              What data privacy measures are in place?
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">All citizen data is encrypted at rest (AES-256) and in transit (TLS 1.3). We're SOC 2 Type II certified, GDPR compliant, and never sell personal information. Data residency options available for government clients.</div>
+            </div>
+          </div>
+          <div class="faq-item fade-up stagger-2">
+            <button class="faq-question" aria-expanded="false">
+              Do you provide training for our team?
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+            </button>
+            <div class="faq-answer" role="region">
+              <div class="faq-answer-inner">Every deployment includes live virtual training sessions, on-site workshops (for enterprise plans), comprehensive documentation, and a dedicated customer success manager for the first 90 days.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= CTA ======= -->
+    <section class="section" aria-labelledby="contact-cta-heading">
+      <div class="container">
+        <div class="cta-banner fade-up">
+          <h2 id="contact-cta-heading">Every Second Counts</h2>
+          <p>Don't wait for the next disaster. Start protecting your community with AI-powered resilience today.</p>
+          <a href="#form-heading" class="btn btn-primary btn-large">Request Your Demo</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>ResiliNet</h3>
+          <p>Smarter Preparedness. Stronger Communities. Protecting lives with climate intelligence technology.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="risk-map.html">Risk Map</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">API Access</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Stay Updated</h4>
+          <p>Get monthly climate resilience insights and platform updates.</p>
+          <form class="newsletter-form" aria-label="Newsletter signup">
+            <input type="email" placeholder="you@email.com" required aria-label="Email address">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="footer-bottom">
+        <p>&copy; 2025 ResiliNet. All rights reserved.</p>
+        <div class="footer-socials" aria-label="Social links">
+          <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 0 0 1.88-2.38 8.59 8.59 0 0 1-2.72 1.04 4.28 4.28 0 0 0-7.32 3.91A12.16 12.16 0 0 1 3 4.79a4.28 4.28 0 0 0 1.32 5.72 4.24 4.24 0 0 1-1.94-.54v.05a4.28 4.28 0 0 0 3.43 4.2 4.27 4.27 0 0 1-1.93.07 4.29 4.29 0 0 0 4 2.97A8.59 8.59 0 0 1 2 19.54a12.13 12.13 0 0 0 6.56 1.92c7.88 0 12.2-6.53 12.2-12.2l-.01-.56A8.72 8.72 0 0 0 23 6.29a8.49 8.49 0 0 1-2.54.7Z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg></a>
+          <a href="#" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.12 2.51.34 1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10Z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-credit">
+        Designed &amp; Developed by <span>Gunal</span>
+        <span class="footer-credit-links">
+          <a href="https://github.com/gunalbasskaran" target="_blank" rel="noopener noreferrer" aria-label="Gunal's GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.12 2.51.34 1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10Z"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/gunal-/" target="_blank" rel="noopener noreferrer" aria-label="Gunal's LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+            LinkedIn
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
